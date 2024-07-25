@@ -226,9 +226,6 @@ Không có
 LbMotion.stopAndWait();
 ```
 
-Xem thêm:
-- [runLRrpm.ino](examples/LbMotion/runLRrpm.ino)
-
 [🔼 Trở về đầu trang](#Các-hàm-điều-khiển-Leanbot)
 
 <!-- ## LbMotion.stopAndWait 
