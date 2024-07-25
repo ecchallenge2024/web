@@ -225,8 +225,6 @@ Không có
 ```
 LbMotion.stopAndWait();
 ```
-### Chú ý
-Khi Leanbot đang chạy ở tốc độ cao, thời gian để dừng sẽ lâu hơn. Khoảng cách Leanbot di chuyển trước khi dừng cũng sẽ dài hơn.
 
 [🔼 Trở về đầu trang](#Các-hàm-điều-khiển-Leanbot)
 
