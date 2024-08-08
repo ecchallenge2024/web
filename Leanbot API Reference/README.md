@@ -1198,7 +1198,7 @@ LbIRLine.doManualCalibration(tbX)
 
 ### Tham số
 - `tbX`: cảm biến chạm được sử dụng để thực hiện lấy mẫu đen/trắng
-  - Leanbot có 4 cảm biến chạm: `TB1A`, `TB1B`, `TB2A` và `TB2A`
+  - Leanbot có 4 cảm biến chạm: `TB1A`, `TB1B`, `TB2A` và `TB2B`
 
 ### Giá trị trả về
 Không có
