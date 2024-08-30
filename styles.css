@@ -11,6 +11,93 @@ body {
     text-align: center;
 }
 
+.information {
+    background-color: #f9f9f9; /* Màu nền nhạt */
+    border-left: 4px solid #3498db; /* Đường viền trái màu xanh dương */
+    padding: 15px; /* Khoảng cách bên trong */
+    font-family: 'Arial', sans-serif; /* Kiểu chữ hiện đại */
+    line-height: 1.6; /* Khoảng cách dòng dễ đọc */
+    border-radius: 8px; /* Bo tròn các góc */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Đổ bóng nhẹ */
+    color: #333; /* Màu chữ chính */
+}
+
+.information strong {
+    color: #3498db; /* Tô đậm và làm nổi bật màu xanh dương */
+}
+
+.information em {
+    color: #e74c3c; /* Làm nổi bật màu đỏ cho đoạn văn */
+    font-style: italic;
+}
+
+.information ul {
+    margin: 15px 0 0 20px; /* Khoảng cách cho danh sách */
+    padding: 0;
+    list-style-type: disc; /* Kiểu gạch đầu dòng */
+}
+
+.information ul li {
+    margin-bottom: 5px; /* Khoảng cách giữa các mục trong danh sách */
+}
+
+.timeline-section {
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+.timeline-section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #3498db;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+}
+
+.timeline-item {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 20px;
+}
+
+.timeline-item:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 5px;
+    width: 10px;
+    height: 10px;
+    background-color: #3498db;
+    border-radius: 50%;
+}
+
+.timeline-item p {
+    margin: 0;
+    line-height: 1.6;
+}
+
+.timeline-item span {
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.timeline-item a {
+    color: #e74c3c;
+    text-decoration: none;
+}
+
+.timeline-item a:hover {
+    text-decoration: underline;
+}
+
+.timeline-item strong {
+    color: #e74c3c;
+}
+
 @keyframes gradientAnimation {
     0% {
         background-position: 0% 50%;
