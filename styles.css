@@ -41,63 +41,6 @@ body {
     margin-bottom: 5px; /* Khoảng cách giữa các mục trong danh sách */
 }
 
-.timeline-section {
-    padding: 20px;
-    background-color: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    font-family: 'Arial', sans-serif;
-    color: #333;
-}
-
-.timeline-section h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
-    color: #3498db;
-    border-bottom: 2px solid #3498db;
-    padding-bottom: 10px;
-}
-
-.timeline-item {
-    position: relative;
-    padding-left: 30px;
-    margin-bottom: 20px;
-}
-
-.timeline-item:before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 5px;
-    width: 10px;
-    height: 10px;
-    background-color: #3498db;
-    border-radius: 50%;
-}
-
-.timeline-item p {
-    margin: 0;
-    line-height: 1.6;
-}
-
-.timeline-item span {
-    font-weight: bold;
-    color: #2c3e50;
-}
-
-.timeline-item a {
-    color: #e74c3c;
-    text-decoration: none;
-}
-
-.timeline-item a:hover {
-    text-decoration: underline;
-}
-
-.timeline-item strong {
-    color: #e74c3c;
-}
-
 @keyframes gradientAnimation {
     0% {
         background-position: 0% 50%;
@@ -173,22 +116,78 @@ h2 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.timeline-item, .document-item {
-    margin: 10px 0;
+.timeline-section {
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+    color: #333;
 }
 
-.timeline-item p, .document-item span {
-    display: inline-block;
-    margin: 0 10px;
+.timeline-section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #3498db;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
 }
 
+/* Gộp span */
+.timeline-item span,
+.document-item span {
+    font-weight: bold;
+    color: #2c3e50;
+    margin-left: 10px; /* Chỉ thêm vào document-item nếu cần */
+}
+
+/* Gộp a */
+.timeline-item a,
 .document-item a {
-    color: #3f51b5;
     text-decoration: none;
+    color: #e74c3c; /* Nếu muốn màu của document khác thì có thể không gộp dòng này */
 }
 
+.timeline-item a:hover,
 .document-item a:hover {
     text-decoration: underline;
+}
+
+/* Gộp section */
+.document-section, 
+.timeline-section {
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+/* Dành riêng cho document-section */
+.document-section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #3498db;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+}
+
+.document-item {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 20px;
+}
+
+.document-item:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 5px;
+    width: 10px;
+    height: 10px;
+    background-color: #3498db;
+    border-radius: 50%;
 }
 
 footer {
