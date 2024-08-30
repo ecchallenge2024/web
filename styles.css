@@ -96,10 +96,28 @@ h2 {
     border: none;
 }
 
+.image-section {
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+.image-section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #3498db;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+}
+
 .image-section img {
     max-width: 100%;
     height: auto;
-    margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .image-container, .info-section {
