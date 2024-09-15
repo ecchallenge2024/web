@@ -120,7 +120,7 @@ LbDelay(timeMs)
 Không có
 
 ### Ví dụ
-Ví dụ cho Leanbot đi thẳng với vận tốc 400 trong 3 giây, rồi dừng lại
+Cho Leanbot đi thẳng với vận tốc 400 trong 3 giây, rồi dừng lại
 ```
 LbMotion.runLR(400, 400);    // let Leanbot move forward
 LbDelay(3000);               // wait for 3 seconds (Leanbot keeps moving forward)
@@ -633,10 +633,10 @@ LbGripper.readL()
 Không có
 
 ### Giá trị trả về
-The current angle (in degrees) of the left gripper arm
-- Unit: degree (angle)
-- Range: [-30, +120]
-- Data type: `int`
+Góc hiện tại (tính bằng độ) của cánh tay kẹp bên trái
+- Đơn vị: độ (góc)
+- Phạm vi: [-30, +120]
+- Kiểu dữ liệu: `int`
 
 ### Ví dụ
 ```
@@ -856,7 +856,7 @@ LbRGB.fillColor(color, shape)
 - `color`: mã màu [RGB](#RGB-color-code)
 
 - `shape`: tập hợp các đèn LED cần đặt màu
-  - Các loại dữ liệu được phép: `byte`
+- Các loại dữ liệu được phép: `byte`
 
 ### Giá trị trả về
 Không có
@@ -1049,7 +1049,7 @@ Khoảng cách tối đa của cảm biến là `3,000 mm`, ngoài khoảng các
 # IR Sensors
 
 ![Screenshot](image/LbIRArray.png)
-- Leanbot có 8 cảm biến hồng ngoại (thứ tự từ 0 đến 7) với các mục đích khác nhau:
+- Leanbot có 8 cảm biến hồng ngoại với các mục đích khác nhau:
 
 | Chức năng             | Cảm biến                  |
 | -------------------- |:-------------------------:|
@@ -1060,7 +1060,7 @@ Khoảng cách tối đa của cảm biến là `3,000 mm`, ngoài khoảng các
 ## LbIRLine.read()
 
 ### Mô tả
-Hàm này đọc giá trị của 4 cảm biến thanh. Dùng để kiểm tra vị trí của đường đen so với Leanbot.
+Hàm này đọc giá trị của 4 cảm biến phát hiện đường (ir3R - ir1R - ir0L - ir2L) . Dùng để kiểm tra vị trí của đường đen so với Leanbot.
 
 ### Cú pháp
 ```
@@ -1071,7 +1071,7 @@ lineState = LbIRLine.read()
 Không có
 
 ### Giá trị trả về
-Trạng thái nhị phân của 4 cảm biến thanh
+Trạng thái nhị phân của 4 cảm biến phát hiện đường
 - Giá trị `0`: cảm biến nằm trên bề mặt trắng
 - Giá trị `1`: cảm biến nằm trên đường đen
 - Loại dữ liệu: `byte`
@@ -1089,7 +1089,7 @@ Xem thêm:
 ## LbIRLine.value()
 
 ### Mô tả
-Hàm này trả về giá trị của 4 cảm biến thanh được đọc trước đó.
+Hàm này trả về giá trị của 4 cảm biến phát hiện đường được đọc trước đó.
 
 ### Cú pháp
 ```
@@ -1113,7 +1113,7 @@ byte lineValue = LbIRLine.value();
 ## LbIRLine.print()
 
 ### Mô tả
-Hàm này gửi giá trị của 4 cảm biến thanh (được đọc trước đó) tới máy tính.
+Hàm này gửi giá trị của 4 cảm biến phát hiện đường (được đọc trước đó) tới máy tính.
 
 ### Cú pháp
 ```
@@ -1136,7 +1136,7 @@ LbIRLine.print();
 ## LbIRLine.displayOnRGB()
 
 ### Mô tả
-Hàm này hiển thị kết quả của 4 cảm biến thanh trên các đèn LED RGB với màu sắc.
+Hàm này hiển thị kết quả của 4 cảm biến phát hiện đường trên các đèn LED RGB với màu sắc.
 - Nếu cảm biến nào đang ở trên đường đen, đèn LED RGB tương ứng sẽ sáng lên
 
 ### Cú pháp
@@ -1161,7 +1161,7 @@ LbIRLine.displayOnRGB(CRGB::Blue);   // display result on Leds
 ## LbIRLine.isBlackDetected()
 
 ### Mô tả
-Hàm này kiểm tra xem một trong 4 cảm biến thanh có đang ở trên đường đen không.
+Hàm này kiểm tra xem một trong 4 cảm biến phát hiện đường có đang ở trên đường đen không.
 
 ### Cú pháp
 ```
@@ -1172,8 +1172,8 @@ LbIRLine.isBlackDetected()
 Không có
 
 ### Giá trị trả về
-- `true` : cảm biến thanh đang ở trên đường đen
-- `false`: cảm biến thanh KHÔNG ở trên đường đen
+- `true` : cảm biến phát hiện đường đang ở trên đường đen
+- `false`: cảm biến phát hiện đường KHÔNG ở trên đường đen
 - Loại dữ liệu: `bool`
 
 ### Ví dụ
