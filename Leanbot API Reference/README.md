@@ -354,8 +354,8 @@ LbMotion.waitRotation(rotationStep)
 
 ### Tham số
 - `rotationStep`: Góc quay của Leanbot
-  - Đơn vị: bước
-  - Các loại dữ liệu cho phép: `long`
+- Đơn vị: bước
+- Các loại dữ liệu cho phép: `long`
 
 ### Giá trị trả về
 Không có
