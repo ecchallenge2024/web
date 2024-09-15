@@ -120,7 +120,7 @@ LbDelay(timeMs)
 Không có
 
 ### Ví dụ
-Ví dụ cho Leanbot đi thẳng với vận tốc 400 trong 3 giây, rồi dừng lại
+Cho Leanbot đi thẳng với vận tốc 400 trong 3 giây, rồi dừng lại
 ```
 LbMotion.runLR(400, 400);    // let Leanbot move forward
 LbDelay(3000);               // wait for 3 seconds (Leanbot keeps moving forward)
