@@ -1060,7 +1060,7 @@ Khoảng cách tối đa của cảm biến là `3,000 mm`, ngoài khoảng các
 ## LbIRLine.read()
 
 ### Mô tả
-Hàm này đọc giá trị của 4 cảm biến thanh. Dùng để kiểm tra vị trí của đường đen so với Leanbot.
+Hàm này đọc giá trị của 4 cảm biến phát hiện đường (ir3R - ir1R - ir0L - ir2L) . Dùng để kiểm tra vị trí của đường đen so với Leanbot.
 
 ### Cú pháp
 ```
@@ -1071,7 +1071,7 @@ lineState = LbIRLine.read()
 Không có
 
 ### Giá trị trả về
-Trạng thái nhị phân của 4 cảm biến thanh
+Trạng thái nhị phân của 4 cảm biến phát hiện đường
 - Giá trị `0`: cảm biến nằm trên bề mặt trắng
 - Giá trị `1`: cảm biến nằm trên đường đen
 - Loại dữ liệu: `byte`
@@ -1089,7 +1089,7 @@ Xem thêm:
 ## LbIRLine.value()
 
 ### Mô tả
-Hàm này trả về giá trị của 4 cảm biến thanh được đọc trước đó.
+Hàm này trả về giá trị của 4 cảm biến phát hiện đường được đọc trước đó.
 
 ### Cú pháp
 ```
@@ -1113,7 +1113,7 @@ byte lineValue = LbIRLine.value();
 ## LbIRLine.print()
 
 ### Mô tả
-Hàm này gửi giá trị của 4 cảm biến thanh (được đọc trước đó) tới máy tính.
+Hàm này gửi giá trị của 4 cảm biến phát hiện đường (được đọc trước đó) tới máy tính.
 
 ### Cú pháp
 ```
@@ -1136,7 +1136,7 @@ LbIRLine.print();
 ## LbIRLine.displayOnRGB()
 
 ### Mô tả
-Hàm này hiển thị kết quả của 4 cảm biến thanh trên các đèn LED RGB với màu sắc.
+Hàm này hiển thị kết quả của 4 cảm biến phát hiện đường trên các đèn LED RGB với màu sắc.
 - Nếu cảm biến nào đang ở trên đường đen, đèn LED RGB tương ứng sẽ sáng lên
 
 ### Cú pháp
@@ -1161,7 +1161,7 @@ LbIRLine.displayOnRGB(CRGB::Blue);   // display result on Leds
 ## LbIRLine.isBlackDetected()
 
 ### Mô tả
-Hàm này kiểm tra xem một trong 4 cảm biến thanh có đang ở trên đường đen không.
+Hàm này kiểm tra xem một trong 4 cảm biến phát hiện đường có đang ở trên đường đen không.
 
 ### Cú pháp
 ```
@@ -1172,8 +1172,8 @@ LbIRLine.isBlackDetected()
 Không có
 
 ### Giá trị trả về
-- `true` : cảm biến thanh đang ở trên đường đen
-- `false`: cảm biến thanh KHÔNG ở trên đường đen
+- `true` : cảm biến phát hiện đường đang ở trên đường đen
+- `false`: cảm biến phát hiện đường KHÔNG ở trên đường đen
 - Loại dữ liệu: `bool`
 
 ### Ví dụ
