@@ -856,7 +856,7 @@ LbRGB.fillColor(color, shape)
 - `color`: mã màu [RGB](#RGB-color-code)
 
 - `shape`: tập hợp các đèn LED cần đặt màu
-  - Các loại dữ liệu được phép: `byte`
+- Các loại dữ liệu được phép: `byte`
 
 ### Giá trị trả về
 Không có
