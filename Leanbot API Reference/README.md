@@ -633,10 +633,10 @@ LbGripper.readL()
 Không có
 
 ### Giá trị trả về
-The current angle (in degrees) of the left gripper arm
-- Unit: degree (angle)
-- Range: [-30, +120]
-- Data type: `int`
+Góc hiện tại (tính bằng độ) của cánh tay kẹp bên trái
+- Đơn vị: độ (góc)
+- Phạm vi: [-30, +120]
+- Kiểu dữ liệu: `int`
 
 ### Ví dụ
 ```
