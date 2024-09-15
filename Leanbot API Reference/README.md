@@ -1049,7 +1049,7 @@ Khoảng cách tối đa của cảm biến là `3,000 mm`, ngoài khoảng các
 # IR Sensors
 
 ![Screenshot](image/LbIRArray.png)
-- Leanbot có 8 cảm biến hồng ngoại (thứ tự từ 0 đến 7) với các mục đích khác nhau:
+- Leanbot có 8 cảm biến hồng ngoại với các mục đích khác nhau:
 
 | Chức năng             | Cảm biến                  |
 | -------------------- |:-------------------------:|
